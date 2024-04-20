@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Recommendation Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <p>1. Personalize your outfit by selecting different attributes such as clothing pieces, styles, colors, and accessories. You are encouraged to select multiple options within the graph.</p>
+        <p>2. Once you are satisfied with your selection, click the “Generate My Outfit” button to begin the creation process.</p>
+        <p>3. Wait briefly, and your customized outfit will be displayed in the dialogue box on the right side of the page.</p>
+        <p>4. To experiment with more fashion styles, simply generate a new customized outfit by making new selections within the graph.</p>
+    </div>
+    <svg id="graph" width="480" height="600"></svg>
+    <div id="info">
+        <p>Node Information:</p>
+        <textarea class="textbox" id="recipeTextarea" placeholder="Here is your outfit"></textarea>
+        <button onclick="handleSubmit()">Generate My Outfit</button>
+    </div>
+</div>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="tree.js"></script>
+</body>
+</html>

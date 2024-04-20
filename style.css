@@ -1,0 +1,74 @@
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#instructions {
+    flex: 1;
+    padding: 20px;
+    /*background-color: #f4f4f4;*/
+    background-color: #9ecfea;
+    overflow-y: auto;
+}
+#graph-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#graph {
+    max-width: 70%; /* Adjust the width as needed */
+    max-height: 80vh; /* Adjust the height as needed */
+}
+
+#info {
+    flex: 1;
+    padding: 20px;
+    /*background-color: #f4f4f4;*/
+    background-color: #9ecfea;
+    overflow-y: auto; /* Enables scrolling if text is too long */
+}
+.node rect {
+    stroke: #000;
+    stroke-width: 1.5px;
+    rx: 10px; /* rounded corners */
+}
+.node text {
+    pointer-events: none;
+}
+.link {
+    stroke: #555;
+    stroke-width: 1.5;
+}
+
+.textbox {
+    width: 80%;
+    height: 70%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: 2px solid #555;
+    padding: 10px;
+    background-color: #D5CCFFFF;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #3f4290;
+}
