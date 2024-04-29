@@ -37,7 +37,10 @@
 
     <div id="info">
         <p>Here's your outfit recommendation:</p>
-        <textarea class="textbox" id="outfitTextarea" placeholder="Here is your outfit"></textarea>
+        <div id="recommendationBox" class="recommendation-box">
+            <textarea class="textbox" id="outfitTextarea" placeholder="Details about your outfit will appear here."></textarea>
+            <img id="outfitImage" src="" alt="Outfit Image" />
+        </div>
         <button id="generateMyOutfitButton" onclick="sendPrompt()">Generate My Outfit</button>
     </div>
 </div>

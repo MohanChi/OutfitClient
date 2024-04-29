@@ -101,12 +101,21 @@ body {
 
 .textbox {
     width: 80%;
-    height: 70%;
+    height: 35vh;
     padding: 15px;
     font-size: 15px;
     border: 2px solid #555;
     border-radius: 10px;
     margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#outfitImage {
+    width: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 button {

@@ -156,6 +156,23 @@ function sendPrompt() {
                 const outfitText = data;
                 textarea.value = outfitText;
                 spinner.stop();
+
+                $.ajax({
+                    url: 'https://generative-outfit-api.momochi.me/GetImageByDalle',
+                    type: 'POST',
+                    data: JSON.stringify(outfitText),
+                    contentType: 'application/json',
+                    success: function (imageUrl) {
+                        console.log('Received image URL: ' + imageUrl);
+                        const imageElement = document.getElementById('outfitImage');
+                        imageElement.src = imageUrl;
+                        // imageElement.style.display = 'block';
+                    },
+                    error: function (error) {
+                        console.error('Error fetching the image:', error);
+                    }
+                });
+
             }
         }
     });
